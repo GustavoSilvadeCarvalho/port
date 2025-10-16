@@ -3,7 +3,7 @@ import LogoContainer from "./LogoContainer";
 
 export default function Hero() {
     return (
-        <div className="w-full max-w-90 sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-8 pt-30 xl:pt-50 mb-16 lg:mb-40">
+        <div className="w-4/5 max-w-[1200px] flex flex-col lg:flex-row items-center justify-between gap-8 pt-30 xl:pt-50 mb-16 lg:mb-40">
             <div className="text-center lg:text-left flex flex-col gap-4 xl:gap-7 w-full lg:w-1/2">
                 <h2 className="text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-white">Desenvolvendo experiências web completas, do servidor à tela.</h2>
                 <h3 className="text-lg md:text-2xl text-white">Eu sou Gustavo Silva, Desenvolvedor Full Stack.</h3>

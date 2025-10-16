@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-90 sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-7xl max-h-20 flex items-center justify-between px-4 sm:px-8 py-4 text-white border border-neutral-600/50 rounded-2xl bg-gradient-to-b from-neutral-900/70 to-neutral-900/60 backdrop-blur-lg">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-4/5 max-w-[1200px] px-4 flex items-center justify-between py-4 text-white border border-neutral-600/50 rounded-2xl bg-gradient-to-b from-neutral-900/70 to-neutral-900/60 backdrop-blur-lg">
             <div className="items-center gap-2 flex transform transition duration-300 hover:scale-110">
                 <span className="text-xl font-bold text-gray-400">{" >_"}</span>
                 <span className="text-xl font-bold ">GC.</span>
@@ -35,7 +35,7 @@ export default function Header() {
             </button>
             {/* Dropdown do menu hambúrguer */}
             {menuOpen && (
-                <div className="w-90 absolute top-20 right-0 bg-gradient-to-b from-neutral-900 to-neutral-900 border border-neutral-600/50 rounded-xl shadow-lg p-6 flex flex-col gap-4 sm:hidden z-50">
+                <div className="w-full max-w-[1200px] absolute top-20 right-0 bg-gradient-to-b from-neutral-900 to-neutral-900 border border-neutral-600/50 rounded-xl shadow-lg p-6 flex flex-col gap-4 sm:hidden z-50">
                     <a href="#home" className="hover:text-gray-400 transition" onClick={() => setMenuOpen(false)}>Home</a>
                     <a href="#about" className="hover:text-gray-400 transition" onClick={() => setMenuOpen(false)}>Sobre</a>
                     <a href="#projects" className="hover:text-gray-400 transition" onClick={() => setMenuOpen(false)}>Projetos</a>
