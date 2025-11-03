@@ -1,6 +1,21 @@
+'use client';
+import { useGSAP } from '@gsap/react';
+import { useRef } from 'react';
+import { animateWithGsapFrom } from "../utils/animation";
+
 export default function About() {
+    const aboutRef = useRef(null);
+
+    useGSAP(() => {
+        animateWithGsapFrom('#about', {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: 'power2.out',
+        });
+    }, [])
     return (
-        <div className="w-full max-w-90 sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-7xl flex flex-col items-center justify-center py-12">
+        <div ref={aboutRef} id="about" className="w-full max-w-90 sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-7xl flex flex-col items-center justify-center py-12">
             <div className="flex items-center w-full mx-auto">
                 <div className="flex-1 h-px bg-gradient-to-l from-neutral-600 to-black" />
                 <h2 className="px-4 text-2xl font-bold text-center text-white whitespace-nowrap">Sobre mim</h2>

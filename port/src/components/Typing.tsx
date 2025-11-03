@@ -8,7 +8,7 @@ export default function AnimatedCode() {
     const codeString = `// Building scalable solutions
 class TechStack {
   constructor() {
-    this.frontend = ['React', 'Next.js', 'Shadcn', 'HTML5', 'Tailwind', 'TypeScript'];
+    this.frontend = ['React', 'Next.js', 'HTML5', 'Tailwind', 'TypeScript'];
     this.backend = ['Node.js', 'TypeScript', 'NestJS', 'Express'];
     this.database = ['PostgreSQL', 'MongoDB'];
   }
