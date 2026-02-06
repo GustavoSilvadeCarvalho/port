@@ -16,7 +16,7 @@ const projects: Project[] = [
     banner: "/brainwave.png",
     icon: "/brainwave-icon.svg",
     title: "BrainWave",
-    link: "https://brainwave.ai",
+    link: "https://brainwave-ten-iota.vercel.app/",
     linkLabel: "brainwave.ai",
     linkHoverColor: "hover:text-purple-400",
     description:
@@ -33,8 +33,8 @@ const projects: Project[] = [
     banner: "/habitta.png",
     icon: "/habitta-icon.png",
     title: "Habitta",
-    link: "https://habitta.com",
-    linkLabel: "habitta.com",
+    link: "https://habitta.vercel.app/",
+    linkLabel: "habitta.app",
     linkHoverColor: "hover:text-white",
     description:
       "Uma imobiliária especializada na venda e aluguel de imóveis de alto padrão. Este site foi desenvolvido utilizando as tecnologias Next.js, TypeScript, Tailwind CSS, e Shadcn/UI para proporcionar uma experiência moderna e fluida aos usuários.",
