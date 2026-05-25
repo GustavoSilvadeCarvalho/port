@@ -38,31 +38,35 @@ export default function About() {
                 <h2 className="px-4 text-2xl font-bold text-center text-white whitespace-nowrap">Sobre mim</h2>
                 <div className="flex-1 h-px bg-gradient-to-r from-neutral-600 to-black" />
             </div>
-            <p className="mt-12 text-center text-white">Construindo o futuro uma linha de cada vez.</p>
-            <div id="about-me" className='text-white flex flex-col md:flex-row items-center md:items-stretch justify-between mt-12 gap-8 w-full'>
-                <div className='about-column flex flex-col items-center gap-4 w-full md:w-auto'>
-                    <h3 className='text-xl text-center'>Formação</h3>
-                    <div className='w-[340px] md:w-[370px] bg-gradient-to-b from-neutral-900/70 to-neutral-900/60 border border-neutral-600/50 rounded-2xl p-4 space-y-2'>
-                        <p>Fatec</p>
-                        <p>Desenvolvimento de Software Multiplataforma</p>
-                        <p>2024 -</p>
-                    </div>
-                    <div className="hidden md:block h-12 w-0 border-l border-dashed border-zinc-500"></div>
-                </div>
-                <div className='about-column flex flex-col items-center justify-center w-full md:flex-1'>
-                    <h3 className='text-xl text-center mb-2'>sobre mim</h3>
-                    <div className='w-[340px] md:w-[370px] bg-gradient-to-b from-neutral-900/70 to-neutral-900/60 border border-neutral-600/50 rounded-2xl p-4 space-y-2 text-center'>
-                        <p>Desenvolvedor Full Stack movido pelo desafio de transformar ideias em produtos reais. Atualmente na FATEC e atuando na Iliberty Tecnologia da Informação, foco meu desenvolvimento no ecossistema JavaScript/TypeScript. Acredito que a tecnologia, quando bem aplicada, é a chave para otimizar processos e criar o futuro, uma linha de cada vez.</p>
+            <p className="mt-8 text-center text-white">Construindo o futuro uma linha de cada vez.</p>
+
+            <div id="about-me" className="text-white mt-12 w-full grid grid-cols-1 md:grid-cols-7 gap-8 items-stretch">
+                {/* Left card */}
+                <div className="about-column flex flex-col items-center md:items-start gap-4 md:col-span-2">
+                    <div className="w-full max-w-[370px] bg-gradient-to-b from-neutral-900/70 to-neutral-900/60 border border-neutral-600/50 rounded-2xl p-6 space-y-2">
+                        <p className="text-xs text-neutral-300 uppercase tracking-wide">Formação</p>
+                        <p className="font-semibold text-white">Fatec</p>
+                        <p className="text-sm text-neutral-300">Desenvolvimento de Software Multiplataforma</p>
+                        <p className="text-sm text-neutral-400">2024 -</p>
                     </div>
                 </div>
-                <div className='about-column flex flex-col items-center gap-4 w-full md:w-auto'>
-                    <h3 className='text-xl text-center'>Profissional</h3>
-                    <div className='w-[340px] md:w-[370px] bg-gradient-to-b from-neutral-900/70 to-neutral-900/60 border border-neutral-600/50 rounded-2xl p-4 space-y-2'>
-                        <p>Iliberty Tecnologia da Informação</p>
-                        <p>Estagiário</p>
-                        <p>05/2025 -</p>
+
+                {/* Center featured card (larger) */}
+                <div className="about-column flex flex-col items-center md:col-span-3">
+                    <div className="w-full bg-gradient-to-b from-neutral-900/70 to-neutral-900/60 border border-neutral-600/50 rounded-2xl p-8 text-left shadow-lg max-w-none">
+                        <p className="text-base md:text-lg text-white font-medium leading-relaxed">Desenvolvedor Full Stack movido pelo desafio de transformar ideias em produtos reais. Atualmente na FATEC e atuando na Iliberty Tecnologia da Informação, foco meu desenvolvimento no ecossistema JavaScript/TypeScript.</p>
+                        <p className="mt-6 text-sm text-neutral-400">Acredito que a tecnologia, quando bem aplicada, é a chave para otimizar processos e criar o futuro, uma linha de cada vez.</p>
                     </div>
-                    <div className="hidden md:block h-12 w-0 border-l border-dashed border-zinc-500"></div>
+                </div>
+
+                {/* Right card */}
+                <div className="about-column flex flex-col items-center md:items-end gap-4 md:col-span-2">
+                    <div className="w-full max-w-[370px] bg-gradient-to-b from-neutral-900/70 to-neutral-900/60 border border-neutral-600/50 rounded-2xl p-6 space-y-2 text-left">
+                        <p className="text-xs text-neutral-300 uppercase tracking-wide">Experiência</p>
+                        <p className="font-semibold text-white">Iliberty TI</p>
+                        <p className="text-sm text-neutral-300">Estagiário</p>
+                        <p className="text-sm text-neutral-400">05/2025 -</p>
+                    </div>
                 </div>
             </div>
         </div>

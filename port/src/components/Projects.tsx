@@ -34,8 +34,8 @@ const Projects = () => {
                 stagger: 0.15,
                 duration: 0.15,
                 scrollTrigger: {
-                    trigger: '#projects',
-                    start: 'top 90%',
+                    trigger: '.project-card',
+                    start: 'top 85%',
                     toggleActions: 'restart reverse restart reverse',
                 },
             }

@@ -5,7 +5,7 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full flex items-center bg-black flex-col">
+    <div className="min-h-screen w-full flex items-center bg-black flex-col gap-10">
       <Header />
       <Hero />
       <About />
